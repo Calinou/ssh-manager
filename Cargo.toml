@@ -1,0 +1,12 @@
+[package]
+name = "ssh-manager"
+description = "Command-line SSH server manager"
+version = "0.1.0"
+authors = ["Hugo Locurcio <hugo.locurcio@hugo.pro>"]
+license = "MIT/Apache-2.0"
+
+[dependencies]
+ansi_term = "0.10"
+clap = {version = "2.30", features = ["yaml"]}
+serde = "1.0"
+toml = "0.4"

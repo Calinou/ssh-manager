@@ -1,0 +1,27 @@
+name: ssh-manager
+version: "0.1.0"
+about: Command-line SSH server manager
+subcommands:
+    - add:
+        about: Add a SSH server
+        args:
+            - name:
+                help: The name of the SSH server
+                required: true
+            - host:
+                help: The host of the SSH server (in `user@example.com:port` form)
+                required: true
+    - list:
+        about: List SSH servers
+    - info:
+        about: Display information about a SSH server
+        args:
+            - name:
+                help: The name of the SSH server
+                required: true
+    - remove:
+        about: Remove a SSH server
+        args:
+            - name:
+                help: The name of the SSH server
+                required: true
